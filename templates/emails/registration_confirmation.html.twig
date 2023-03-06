@@ -1,0 +1,12 @@
+<h1>Suite à votre inscription </h1>
+<p>Bonjour
+	{{ user.username }},</p>
+<p>Votre inscription sur le site Mazerolles a bien été prise en compte.</p>
+<p>Vous pouvez dès à présent vous connecter.<br><br>
+    En cliquand sur le lien ci-dessous.<br><br>
+    <a href="{{ absolute_url(path('account_verify', { token: token, id: user.id })) }}">Accéder au site</a><br><br>
+    <strong>Email automatique, merci de ne pas répondre.</strong><br><br>
+    Merci de votre visite sur le site Mazerolles.
+</p>
+
+

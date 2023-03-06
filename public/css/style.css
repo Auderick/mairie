@@ -2943,3 +2943,6 @@ div#registration, div#login {
 div#bloc-registration, div#bloc-login {
   margin-top: 3em;
 }
+section#message-flash {
+  margin-bottom: -15em;
+}
