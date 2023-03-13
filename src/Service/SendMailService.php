@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Service;
 
@@ -9,11 +9,12 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
-
 class SendMailService
 {
-    public function __construct(private readonly MailerInterface $mailer){}
- 
+    public function __construct(private readonly MailerInterface $mailer)
+    {
+    }
+
     /**
      * @throws TransportExceptionInterface
      */
@@ -23,18 +24,16 @@ class SendMailService
 
         $email = (new TemplatedEmail())
                 ->from(new Address('noreply@webtransform.fr', 'Mazerolles'))
-                ->to($to) 
+                ->to($to)
                 ->subject($subject)
                 ->htmlTemplate("emails/$templateTwig")
                 ->context($context);
 
-        // On envoie le mail 
+        // On envoie le mail
         try {
             $this->mailer->send($email);
-        }catch (TransportExceptionInterface $transportException){
+        } catch (TransportExceptionInterface $transportException) {
             throw $transportException;
         }
     }
-
-
 }

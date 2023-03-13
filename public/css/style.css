@@ -1462,15 +1462,15 @@ General Styles - Owlcarousel
 }
 
 /* Restaurant menu Page Header */
-.restaurant-menu-bg:before {
+.welcome-menu-bg:before {
   background: rgba(2, 2, 2, 0.4);
 }
 
-.restaurant-page-header:before {
+.welcome-page-header:before {
   background: rgba(0, 0, 0, 0.45);
 }
 
-.restaurant-image-overlay:before {
+.welcome-image-overlay:before {
   background-color: rgba(2, 2, 2, 0.25);
 }
 

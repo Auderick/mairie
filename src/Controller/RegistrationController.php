@@ -20,18 +20,17 @@ class RegistrationController extends AbstractController
 {
     #[Route('/inscription', name: 'app_register')]
     public function register(
-        Request $request, 
-        UserPasswordHasherInterface $userPasswordHasher, 
+        Request $request,
+        UserPasswordHasherInterface $userPasswordHasher,
         EntityManagerInterface $entityManager,
-        SendMailService $sendMailService, 
-        TokenGeneratorInterface $tokenGeneratorInterface): Response
-    {
+        SendMailService $sendMailService,
+        TokenGeneratorInterface $tokenGeneratorInterface
+    ): Response {
         $user = new User();
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
             // TOKEN
             $tokenRegistration = $tokenGeneratorInterface->generateToken();
 
@@ -55,13 +54,13 @@ class RegistrationController extends AbstractController
                 $user->getEmail(),
                 'Confirmation du compte utilisateur',
                 'registration_confirmation.html.twig',
-                 [
+                [
                     'user' => $user,
                     'token' => $tokenRegistration,
                     'lifeTimeToken' => $user->getTokenRegistrationLifeTime()->format('d/m/Y à H\hi'),
                  ]
             );
-            
+
             $this->addFlash('success', 'Votre compte a bien été créé, un e-mail vous a été envoyé.');
 
             return $this->redirectToRoute('app_login');
@@ -73,15 +72,16 @@ class RegistrationController extends AbstractController
     }
 
     #[Route('/verify/{token}/{id<\d+>}', name: 'account_verify', methods: ['GET'])]
-    public function verify(string $token, User $user, EntityManagerInterface $em): Response{
-       
-        if($user->getTokenRegistration() !== $token){
+    public function verify(string $token, User $user, EntityManagerInterface $em): Response
+    {
+
+        if ($user->getTokenRegistration() !== $token) {
             throw new AccessDeniedException();
         }
-        if($user->getTokenRegistration() === null){
+        if ($user->getTokenRegistration() === null) {
             throw new AccessDeniedException();
         }
-        if(new DateTime('now') > $user->getTokenRegistrationLifeTime()){
+        if (new DateTime('now') > $user->getTokenRegistrationLifeTime()) {
             throw new AccessDeniedException();
         }
 
@@ -92,6 +92,5 @@ class RegistrationController extends AbstractController
         $this->addFlash('success', 'votre compte a bien été activé, vous pouvez maintenant vous connecter.');
 
         return $this->redirectToRoute('app_login');
-
     }
 }
