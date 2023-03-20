@@ -1,0 +1,283 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les actualités{% endblock %}
+
+{% block body %}
+
+    
+    <section class="home-section home-parallax home-fade" id="les-actualites-header">
+        <div class="hero-slider">
+            <ul class="slides">
+                <li class="bg-dark-10 welcome-page-header bg-dark">
+                    <div class="titan-caption">
+                        <div class="caption-content">
+                            <div class="font-alt mb-30 titan-title-size-3">Les actualités de la commune</div>
+                            <div class="font-alt mb-40 titan-title-size-2">Événements de la commune de Mazerolles</div>
+                            <div class="font-alt mb-10 titan-title-size-1">L'actualité municipale: Découvrez les sujets à la une, les infos pratiques, les actualités et événements de la commune.</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+        <section class="module" id="les-actualites">
+            <div class="container">
+                <div class="row multi-columns-row post-columns">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-1.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>                            
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Body Smyle</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 23 Novembre | 3 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Randonnée pédestre.....</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-2.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Conseil municipal des jeunes</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 11 Novembre | 4 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Soirée fluo et soitée pitchounes...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-3.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Conseillers numériques</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 5 Novembre | 15 Commentires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Ateliers avec les conseillers numériques...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-4.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Tous mobilisés</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 23 Novembre | 3 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Manifestation. Non à la fermeture d'une...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-5.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">CPA Lathus</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 11 Novembre | 4 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>L'Action « bienvenue dans mon jardin au...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-6.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Compteurs linky</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 5 Novembre | 15 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>De nouveaux compteurs d'électricité à...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-1.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Nouvel aménagement</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 23 Novembre | 3 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Un nouvel aménagement a été crée afin de...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-2.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">La tyrolienne est en service</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 11 Novembre | 4 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Vous pouvez venir l'essayer...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-3.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Vienne nature</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 5 Novembre | 15 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Les rendez-vous nature et environnement...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-4.jpg') }}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Inscriptions rentrée scolaire</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 23 Novembre | 3 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>L'école maternelle accueille tous les enfants à partir...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{asset('images/post-5.jpg')}}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">Conseil municipal des jeunes</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 11 Novembre | 4 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>Le Conseil Municipal des Jeunes est en place, depuis le...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="post">
+                            <div class="post-thumbnail">
+                                <a href="#"><img src="{{ asset('images/post-6.jpg')}}" alt="Blog-post Thumbnail" id="les-actualites"/></a>
+                            </div>
+                            <div class="post-header font-alt">
+                                <h2 class="post-title">
+                                    <a href="#">BAFA: animateurs</a>
+                                </h2>
+                                <div class="post-meta"><a href="#"></a>&nbsp;| 5 Novembre | 15 Commentaires
+                                </div>
+                            </div>
+                            <div class="post-entry">
+                                <p>La CCVG organise un BAFA de Territoire, avec une session...</p>
+                            </div>
+                            <div class="post-more">
+                                <a class="more-link" href="#">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination font-alt">
+                    <a href="#">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+  
+{% endblock %}

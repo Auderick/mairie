@@ -15,12 +15,12 @@ security:
             security: false
         main:
             lazy: true
-            provider: app_user_provider
-            custom_authenticator: App\Security\LoginFormAuthenticator
-            logout:
-                path: app_logout
+            # provider: app_user_provider
+            # custom_authenticator: App\Security\LoginFormAuthenticator
+            #logout:
+                #path: app_logout
                 # where to redirect after logout
-                target: homepage
+                #target: homepage
             #user_checker: App\Security\UserConfirmation//ne fonctionne pas avec le user confirmation
 
             # activate different ways to authenticate
