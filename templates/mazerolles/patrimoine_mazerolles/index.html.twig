@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Patrimoine de votre commune!
+{% endblock %}
+
+{% block body %}
+
+
+	<section
+		class="home-section home-parallax home-fade" id="presentation_mazerolles" data-background="{{ asset('images/about_bg.jpg') }}">{# <div class="container">
+															<div class="row">
+																<div class="col-sm-6 col-sm-offset-3">
+																	<h2 class="module-title font-alt">About</h2>
+																	<div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+																</div>
+															</div>
+														</div> #}
+	</section>
+	<section class="module" id="presentation_mazerolles_bg">
+		<div class="container" id="presentation_mazerolles">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h2 class="module-title font-alt">Patrimoine de votre commune de Mazerolles</h2>
+					<div class="module-subtitle font-serif">La commune de Mazerolles possède un riche patrimoine.
+												Trois sites sont classés Monuments historiques..</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="module pt-0 pb-0" id="about">
+		<div class="row position-relative m-0" id="patrimoine_mazerolles">
+			<div class="col-xs-12 col-md-6 side-image">
+				<a href="http://issuu.com/tourisme-montmorillonnais/docs/laissez-vous-conter-mazerolles" target="_blank"><img src="https://static.neopse.com/medias/p/870/site/aa/2e/54/aa2e546f33e0cbe6cd4535d9655e2958b2fca72c.jpg?v=v1" width="100%" height="" class="img-fluid" data-target="1" data-url="http://issuu.com/tourisme-montmorillonnais/docs/laissez-vous-conter-mazerolles " data-width="" style="display: inline-block;" alt="Laissez-vous conter.jpg"></div>
+
+
+				<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="module-title font-alt align-left">A la découverte de votre commune</h2>
+							<div class="module-subtitle font-serif align-left">Vous souhaitez en savoir plus sur Mazerolles, voici un peut de lecture en cliquant sur l'image.</div>
+							<h2 class="module-title font-alt align-left">Les paysages</h2>
+							<div class="module-subtitle font-serif align-left">Bordée à l'est par la vienne et traversée du nord au sud par le Goberté, la commune, qui s'étend sur 2125 ha, présente une grande diversité de paysages...</div>
+							<h2 class="module-title font-alt align-left">La géologie</h2>
+							<div class="module-subtitle font-serif align-left">plusieurs unités géologique marquent la commune. Les vallées traversent des assises sédimentaires du secondaire (jurassique) et du tertiaire (éocène)...</div>
+							<h2 class="module-title font-alt align-left">Des espèces rares</h2>
+							<div class="module-subtitle font-serif align-left">L'hirondelle de rivages est plus développée dans le nord de la France. Au sud de la Loire elle reste beaucoup plus localisée. En Poitou-Charentes, elle est surtout présente dans la Vienne. C'est aussi une espèce migratrice qui ...</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	{% endblock %}

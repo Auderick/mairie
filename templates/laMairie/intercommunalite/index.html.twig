@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Intercommunalité
+{% endblock %}
+
+{% block body %}
+	<section class="home-section home-parallax home-fade" id="elections" data-background="{{ asset('images/landing/vienneetgartempe-bg.jpg') }}">
+		<div class="container">
+			<div class="row" id="le_budget">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h2 class="module-title font-alt">L'intercommunalité</h2>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<div class="container" id="elections_mairie">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2"><img class="img-responsive banner-img" src="{{ asset('images/landing/logo_vienneetgartempe.png') }}"></div>
+		</div>
+	</div>
+	<div class="main">
+		<section class="module-medium" id="elections_mairie">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="module-subtitle font-serif large-text">Mazerolles est membre de la Communauté de Communes Vienne et Gartempe, qui a été créée le 1er janvier 2017.<br>
+							Celle-ci regroupe 55 communes issues des Communautés de Communes du Lussacois, du Montmorillonnais, du Pays Chauvinois et des Vals de Gartempe et Creuse.</div>
+
+						<h2 class="module-title font-alt">Qu'est-ce que l'intercommunalité ?</h2><br><br>
+
+						<div class="module-subtitle font-serif large-text align-left" id="elections">L’essentiel</div>
+
+						L'intercommunalité est un mode de coopération entre les communes qui peut prendre deux formes différentes :
+
+						<li>une coopération dite associative, sans fiscalité propre, pour gérer en commun des services publics locaux ;</li>
+						<li>une coopération dite fédérative, avec fiscalité propre, pour conduire des projets de développement local.</li>
+						La coopération intercommunale, initiée à la fin du XIXe siècle, a connu un nouvel essor dans les années 1990. Elle permet de rationaliser l'organisation territoriale et contribue à l'aménagement du territoire.<br>
+						<div class="module-subtitle font-serif large-text align-left h2" id="elections">En détail</div>
+
+						L’expression intercommunalité désigne les différentes formes de coopération existant entre les communes. On distingue l'intercommunalité de gestion et l'intercommunalité de projet.<br><br>
+
+						<div role="tabpanel">
+							<ul class="nav nav-tabs font-alt" role="tablist">
+								<li class="active">
+									<a href="#support" data-toggle="tab">
+										<span class="icon-tools-2"></span>Les deux formes d'intercommunalité</a>
+								</li>
+								<li>
+									<a href="#sales" data-toggle="tab">
+										<span class="icon-tools-2"></span>L'intercommunalité, pour quoi faire</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="support">Le regroupement de communes au sein d’établissements publics de coopération intercommunale (EPCI) peut répondre à deux objectifs très différents :<br>
+
+									<li>la gestion commune de certains services publics locaux (ramassage des ordures ménagères, transports urbains...) ou la réalisation d’équipements locaux, de manière à mieux répartir les coûts et à profiter d’économies d’échelle. Dans ce cas, les communes recherchent une forme de coopération intercommunale relativement souple, dite "associative". On parle alors d'intercommunalité de gestion ;</li><br>
+									<li>la conduite collective de projets de développement local. En faisant ce choix, les communes optent pour une forme de coopération plus intégrée dite "fédérative". On parle alors d'intercommunalité de projet.</li><br>
+									Le financement de l’intercommunalité n'est pas le même selon que le regroupement intercommunal est de type associatif ou fédératif :
+
+									<li>l’intercommunalité associative est dite sans fiscalité propre, c’est-à-dire qu’elle dépend des contributions des communes membres, dont la quote-part est en principe fixée par les statuts de l’établissement. Il existe 8 882 EPCI sans fiscalité propre au 1er janvier 2022, selon les chiffres de mars 2022 de la Direction générale des collectivités locale (DGCL).</li>
+									<li>l’intercommunalité fédérative connaît un régime de fiscalité propre, permettent aux EPCI de disposer de recettes fiscales directes. Les EPCI à fiscalité propre sont au nombre de 1 254 au 1er janvier 2022. La quasi-totalité des communes, soit 34 951 des 34 955 communes françaises, intègre une structure intercommunale à fiscalité propre.</li>
+								</div>
+								<div class="tab-pane" id="sales">L’intercommunalité répond à plusieurs objectifs :
+
+									<li>remédier à l’"émiettement communal" (la France compte 34 955 communes, ce qui représente près de 40% de l’ensemble des communes de l’Union européenne) et rationaliser l'organisation territoriale ;</li>
+									<li>disposer d’institutions capables de gérer et d’aménager un espace urbain en fort développement ;</li>
+									<li>favoriser le développement économique local et la relance de la politique d’aménagement du territoire.</li>
+								</div>
+							</div>
+
+							<hr class="divider-w mt-10 mb-20">
+
+							<div class="module-subtitle font-serif text align-left" id="elections">Président : Michel Jarrassier<br>
+								adresse : 6 rue Daniel Cormier, 86500 Montmorillon<br>
+								Téléphone : 05 49 91 07 53<br>
+								<a href="https://www.vienneetgartempe.fr/">Site internet : https://www.vienneetgartempe.fr/</a>
+							</div>
+
+							<hr class="divider-w mt-10 mb-20">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		{% endblock %}

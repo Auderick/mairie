@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Présentation de votre commune!
+{% endblock %}
+
+{% block body %}
+
+
+	<section
+		class="home-section home-parallax home-fade" id="presentation_mazerolles" data-background="{{ asset('images/about_bg.jpg') }}">{# <div class="container">
+									<div class="row">
+										<div class="col-sm-6 col-sm-offset-3">
+											<h2 class="module-title font-alt">About</h2>
+											<div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+										</div>
+									</div>
+								</div> #}
+	</section>
+	<section class="module" id="presentation_mazerolles_bg">
+		<div class="container" id="presentation_mazerolles">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h2 class="module-title font-alt">Présentation de votre commune de Mazerolles</h2>
+					<div class="module-subtitle font-serif">Mazerolles vous accueille au cœur d'une nature verdoyante, sillonnée par deux cours d’eau, et d'une histoire riche et variée.</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="module pt-0 pb-0" id="about">
+		<div class="row position-relative m-0">
+			<div class="col-xs-12 col-md-6 side-image" data-background="{{asset('images/section-14.jpg') }}"></div>
+			<div class="col-xs-12 col-md-6 col-md-offset-6 side-image-text">
+				<div class="row">
+					<div class="col-sm-12" id="presentation_mazerolles">
+						<h2 class="module-title font-alt align-left">Toponymie</h2>
+						<div class="module-subtitle font-serif align-left">L’origine du nom de Mazerolles signifie « ruines », ce qui sous-entend que cette ville aurait été détruite lors des invasions germaniques vers l’an 276.</div>
+						<h2 class="module-title font-alt align-left">Historique</h2>
+						<div class="module-subtitle font-serif align-left">Mazerolles serait une ville très ancienne. On a découvert de nombreux ossements et sépultures ainsi que des grottes (sous certaines maisons du bourg).
+							                                    Vers 675, un évêque écossais, Romanus, installait une abbaye (un pilier subsiste dans une grange) qui dépendait de l’abbaye d’Airvault.
+							                                    L’église Saint-Romain est romane, vouée à Saint-Sylvain, dont on peut voir la statue. Le clocher est surmonté d’un campanile, unique dans la région, qui est classé monument historique.
+							                                    Devant l’église se trouve une pierre plate sur laquelle on posait les cercueils lors des sépultures, avec un anneau pour attacher les chevaux.
+							                                    Il y avait alors deux paroisses : Mazerolles et Loubressac, qui a été rattachée à Mazerolles au 17e siècle
+							                                    .</div>
+						<h2 class="module-title font-alt align-left">Economie</h2>
+						<div class="module-subtitle font-serif align-left">Bien que commune rurale, Mazerolles assure plus de quatre-vingts emplois grâce aux industries installées sur son territoire, usine de produits béton, entreprise d’électricité, carrières, etc….</div>
+						<h2 class="module-title font-alt align-left">Géographie</h2>
+						<div class="module-subtitle font-serif align-left">Superficie : 2 125 hectares
+							                                    Altitude : Point culminant 151 mètres , bourg 70 mètres
+							                                    Hydrographie : La Vienne, Le Goberté
+							                                    Population : 875 habitants au 1er janvier 2023.
+							                                    Située sur la R.N. 147, à 35 km de Poitiers.
+							                                    Outre le bourg et le Pont, Mazerolles regroupe plusieurs hameaux : la Grange, l’Aubergère, la Grand’Maison, la Chaffauderie, le Bergault, Chenest, la Contrie, Loubressac, Chanteloup..</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="module" id="presentation_mazerolles_bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h2 class="module-title font-alt">Votre commune</h2>
+					<div class="module-subtitle font-serif">Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+					<div class="team-item">
+						<div class="team-image"><img src="{{ asset('images/team-1.jpg') }}" alt="Member Photo"/>
+							<div class="team-detail">
+								<h5 class="font-alt">La vienne</h5>
+								<p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+							</div>
+						</div>
+						<div class="team-descr font-alt">
+							<div class="team-name">sit amet ligula</div>
+							<div class="team-role">consectetur adipiscing elit lacus.</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+					<div class="team-item">
+						<div class="team-image"><img src="{{ asset('images/team-2.jpg') }}" alt="Member Photo"/>
+							<div class="team-detail">
+								<h5 class="font-alt">Le pont</h5>
+								<p class="font-serif">Lorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+							</div>
+						</div>
+						<div class="team-descr font-alt">
+							<div class="team-name">sit amet ligula</div>
+							<div class="team-role">consectetur adipiscing elit lacus</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+					<div class="team-item">
+						<div class="team-image"><img src="{{ asset('images/team-3.jpg') }}" alt="Member Photo"/>
+							<div class="team-detail">
+								<h5 class="font-alt">Vue aérienne</h5>
+								<p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+							</div>
+						</div>
+						<div class="team-descr font-alt">
+							<div class="team-name">sit amet ligula</div>
+							<div class="team-role">consectetur adipiscing elit lacus</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+					<div class="team-item">
+						<div class="team-image"><img src="{{ asset('images/team-4.jpg') }}" alt="Member Photo"/>
+							<div class="team-detail">
+								<h5 class="font-alt">L'église</h5>
+								<p class="font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&amp;nbsp;iaculis diam.</p>
+							</div>
+						</div>
+						<div class="team-descr font-alt">
+							<div class="team-name">sit amet ligula</div>
+							<div class="team-role">consectetur adipiscing elit lacus</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

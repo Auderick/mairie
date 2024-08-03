@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le budget
+{% endblock %}
+
+{% block body %}
+	<main id="budget">
+		<section class="home-section home-parallax home-fade" id="le_budget" data-background="{{ asset('images/about_bg.jpg') }}">
+			<div class="container">
+				<div class="row" id="le_budget">
+					<div class="col-sm-6 col-sm-offset-3">
+						<h2 class="module-title font-alt">Le budget communal</h2>
+						<div class="module-subtitle font-serif">Retrouver ici toutes les informations concernant le budget de la commune.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="module" id="mairie_budget">
+			<div class="container">
+				<div class="row" id="mairie_le_budget">
+					<div class="col-sm-6">
+						<h5 class="font-alt">Le budget communal est à la fois un acte de prévision et d’autorisation :</h5><br/>
+						<p>Acte de prévision car il constitue un programme financier évaluatif des recettes à encaisser et des dépenses à faire sur une année.</p>
+						<p>Acte d’autorisation car le budget est l’acte juridique par lequel le maire (organe exécutif de la collectivité locale) est autorisé à engager les dépenses votées par le Conseil Municipal</p>
+						<p>Le budget de la commune est établi en section de fonctionnement et section d’investissement, tant en recettes qu’en dépenses.</p>
+
+						<li>
+							La section de fonctionnement</li>
+						<p>La section de fonctionnement est constituée des dépenses courantes et récurrentes nécessaires au bon fonctionnement des services municipaux et à la mise en œuvre des actions décidées par les élus. Y figure aussi le remboursement des intérêts des emprunts. Elle enregistre également les recettes fiscales, les dotations et participations de l’État ainsi que les recettes d'exploitation des services (accueils de loisirs, restauration scolaire, école de musique, etc.).</p>
+
+						<li>
+							La section d'investissement</li>
+						<p>La section d'investissement intéresse essentiellement les opérations d'équipement d'envergure ayant pour objet d'augmenter la valeur du patrimoine de la Ville et d'améliorer la qualité des équipements municipaux, voire d'en créer de nouveaux. Le remboursement du capital de la dette figure également à la section d'investissement. Les recettes proviennent essentiellement des emprunts, de subventions spécifiques de l’état et de l'autofinancement (épargne).</p><br>
+
+						<p>Enfin, le budget de la commune est divisé en chapitres et articles dans les conditions qui sont déterminées par décret.
+						Le budget communal comporte une série de documents parmi lesquels le budget primitif.
+						Un document très important constitue l’arrêt officiel des comptes. Il retrace les mouvements des recettes et des dépenses réalisées au cours de l’exercice clos : le compte administratif</p>
+					</div>
+					<div class="col-sm-6">
+						<div class="col-md-6" id="budget_commune">
+							<div class="card">
+								<div class="card-header">
+									<a href="#">
+
+										<i class="fa fa-folder-open"></i>
+										<p>
+											<span>Compte administratif</span>
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6" id="budget_commune">
+							<div class="card">
+								<div class="card-header">
+									<a href="#">
+
+										<i class="fa fa-folder-open"></i>
+										<p>
+											<span>Budget primitif</span>
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="home-section home-parallax home-fade" id="mairie_le_budget">
+			<div class="container" id="budget_mairie">
+				<div class="row">
+					<div class="col-sm-12" id="budget_la_mairie">
+						<h2 class="module-title font-alt">Le budget des communes! Comment ça marche?</h2>
+						<div class="module-subtitle font-serif">Petite vidéo explicative</div>
+					</div>
+					<div class="col-sm-12" id="le_budget_la_mairie">
+
+
+						<iframe width="900" height="600" src="https://www.youtube.com/embed/z55a4FDnzrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+{% endblock %}

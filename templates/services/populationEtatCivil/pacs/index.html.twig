@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pacs
+{% endblock %}
+
+{% block body %}
+	<section class="home-section home-parallax home-fade" id="elections" data-background="{{ asset('images/landing/pacs-bg.jpg') }}"></section>
+
+	<div class="main">
+		<section class="module-medium" id="elections_mairie">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2 class="module-title font-alt">Pacte civil de solidarité (Pacs)</h2>
+						<div class="module-subtitle font-serif large-text">Le pacte civil de solidarité (Pacs) est un contrat conclu entre 2 personnes majeures, de sexe différent ou de même sexe.Il permet d'organiser votre vie commune.</div>
+						<div role="tabpanel">
+							<ul class="nav nav-tabs font-alt" role="tablist">
+								<li class="active">
+									<a href="#sePacser" data-toggle="tab">
+										<span class="icon-tools-2"></span>Se pacser</a>
+								</li>
+								<li>
+									<a href="#effetPacs" data-toggle="tab">
+										<span class="icon-tools-2"></span>Efet d'un Pacs</a>
+								</li>
+								<li>
+									<a href="#modifierPacs" data-toggle="tab">
+										<span class="icon-tools-2"></span>Modifier un Pacs</a>
+								</li>
+								<li>
+									<a href="#dissoudrePacs" data-toggle="tab">
+										<span class="icon-tools-2"></span>Dissoudre un Pacs</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="sePacser">Vous pouvez conclure un pacte civil de solidarité (Pacs) que vous viviez en couple de même sexe ou de sexe différent, quelle que soit votre nationalité. Ce contrat vous permet d'organiser votre vie commune. Vous devez remplir certaines conditions et rédiger une convention. Votre Pacs est enregistré en mairie ou chez un notaire.
+								</div>
+								<div class="tab-pane" id="effetPacs">Si vous êtes lié par un Pacs, vous avez des droits et des obligations. Le Pacs a des effets sur les certaines aides sociales, sur vos biens, votre logement et vos impôts. En revanche, il n'a pas effet sur votre nom, ni sur le lien avec vos enfants.
+								</div>
+								<div class="tab-pane" id="modifierPacs">Vous êtes pacsé et souhaitez modifier les règles d'organisation de votre vie commune ? Dans ce cas, vous devez modifier votre Pacs en rédigeant une convention modificative. La démarche dépend du lieu d'enregistrement du Pacs initial.
+								</div>
+								<div class="tab-pane" id="dissoudrePacs">Le Pacs que vous avez signé sera dissout en cas de séparation, ou à l'initiative de l'un de vous ou de vous 2. Il peut aussi être dissout en cas de mariage. En cas de décès, la dissolution est automatique.
+								</div>
+							</div>
+
+							<hr class="divider-w mt-10 mb-20">
+
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+			{% endblock %}
