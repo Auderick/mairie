@@ -1,6 +1,439 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Deliberations{% endblock %}
+{% block title %}Deliberations
+{% endblock %}
 
 {% block body %}
-{% endblock %}
+    <section class="home-section home-parallax home-fade" id="deliberation" data-background="{{ asset('images/about_bg.jpg') }}">
+		<div class="titan-caption">
+			<div class="caption-content">
+				<div class="container" id="deliberation">
+					<div class="module-title font-alt">DÉLIBÉRATIONS</div>
+					<div class="module-subtitle font-serif">Retrouvez ici Les comptes-rendus de votre commune
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="main">
+		<section class="module pt-0 pb-0" id="conseil_municipal_deliberation">
+			<div class="row position-relative m-0">
+				<div class="col-xs-12 col-md-6">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="module-title font-alt align-left">DÉLIBÉRATIONS</h2>
+							<p class="module-subtitle font-serif align-left">Retrouvez ici le travail de vos élus et conseillés minicipaux</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i class="icon-clock"></i>
+							</div>
+							<select class="form-control input-lg" id="date" name="date" type="text" required="required" onchange="window.location.href=this.value">
+								<option value="date" disabled="" selected="">Choisir une année</option>
+								<option value="{{ path('deliberations/annee') }}">2024</option>
+								<option value="2023">2023</option>
+								<option value="2022">2022</option>
+								<option value="2021">2021</option>
+								<option value="2020">2020</option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="module" id="conseil_municipal_deliberation">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h4 class="font-alt mb-0">Le conseil municipal</h4>
+						<hr class="divider-w mt-10 mb-20">
+						<div role="tabpanel">
+
+							<div class="tab-content">
+								<div class="tab-pane active" id="support">
+									<p>Les communes ont été créées par une loi du 14 décembre 1789. Chaque commune, quelle que soit sa taille, est administrée par, d’une part, un conseil municipal et, d’autre part, par le maire et un ou plusieurs adjoints élus par le conseil municipal en son sein.</p>
+									<p>Le conseil municipal représente les habitants. Il est chargé de régler "par ses délibérations les affaires de la commune. Il vote le budget, approuve le compte administratif, il peut créer et supprimer des services publics municipaux, décider des travaux, gérer le patrimoine communal, accorder des aides favorisant le développement économique. Pour exerce ses compétences, il adopte des délibérations. Si besoin est, il peut former des commissions pouvant étudier des dossiers.</p>
+
+									<p>L’article L.2122-22 dresse la liste limitative des  missions  susceptibles  d’être  déléguées au maire par le conseil municipal.</p>
+
+									<p>Quelle que soit l’importance démographique de la commune, tout conseiller municipal, dans le cadre de sa fonction, doit être informé des affaires de la commune faisant l’objet d’une délibération. Afin de garantir l’expression du pluralisme et de permettre au public de connaître les différents points de vue des élus sur les affaires communales, le législateur a reconnu un certain nombre de droits aux élus de l’opposition au sein du conseil municipal.</p>
+
+									<p>Le conseil municipal doit se réunir au moins une fois par trimestre. Le maire fixe l’’ordre du jour qui doit être communiqué avant le début de la séance. Celle-ci est ouverte au public sauf si l’assemblée décide le huis clos ou si le maire exerce son pouvoir de "police des séances", notamment en cas d’agitation, et restreint l’accès du public aux débats. En cas de dysfonctionnement grave, le conseil municipal peut être dissous par décret en Conseil des ministres.</p>
+								</div>
+							</div>
+						</div>
+						<h4 class="font-alt mb-0"></h4>
+						<hr class="divider-w mt-10 mb-20">
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a data-toggle="collapse" data-parent="#accordion" href="#support1">Les attributions du conseil municipal</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support1">
+									<div class="panel-body">Mise à jour : 14 juin 2022<br><br>
+
+										<p>Articles L. 2121-29 à L. 2121-34 du CGCT<br>
+																																	
+										Le conseil municipal a une compétence générale de droit commun pour régler par ses délibérations les affaires de la commune, aux termes de l’article L. 2121-29 du CGCT.<br>
+																																	
+										Aucune définition précise et limitative de cette notion d’affaires communales n’est donnée. Les affaires de la commune ne correspondent pas à des domaines d’activité déterminés, mais elles se caractérisent par le but d’intérêt public communal poursuivi par le conseil municipal en décidant d’intervenir. Par exemple, des travaux destinés à prévenir les conséquences dommageables pour les biens et terrains situés sur le territoire communal du déversement d’eaux pluviales présentent un caractère d’intérêt communal, alors même qu’ils sont réalisés sur l’emprise d’une voirie départementale (CE 25 juillet 1986). Le juge administratif a apporté quelques précisions et limites à la notion, par exemple en considérant que la collectivité ne peut accorder des aides à des personnes privées poursuivant un intérêt lucratif autres que celles définies par les textes régissant cette compétence (CE 6 juin 1986). La jurisprudence administrative concernant les limites et les interprétations de la notion « d’affaires communales » est vaste et précise. D’une manière générale, on retiendra que le Conseil d’Etat a eu l’occasion de préciser que l’article L. 2121-29 du CGCT : « habilite le conseil municipal à statuer sur toutes les questions d’intérêt public communal, sous réserve qu’elles ne soient pas dévolues par la loi à l’Etat ou à d’autres personnes publiques et qu’il n’y ait pas d’empiétement sur les attributions conférées au maire. » (CE, 29 juin 2001, Commune de Mons-en-Barœul, n° 193716).<br>
+																																	
+										Tout en étant de plein droit compétent pour régler par délibérations les affaires de la commune, le conseil municipal doit néanmoins veiller à respecter les compétences transférées par la loi au maire, notamment en matière de police où seul celui-ci est compétent. Il exerce cependant un pouvoir de contrôle permanent sur l’exercice par le maire de ses fonctions de responsable de l’administration communale.<br>
+																																	
+										En outre, le conseil municipal :<br>
+																																	
+										- donne son avis toutes les fois que ce dernier est requis par les lois et règlements ou lorsque il est demandé par le représentant de l’Etat dans le département, notamment en application de l’article L. 2122-34 du CGCT;<br>
+											- émet des vœux sur des objets d’intérêt local;<br>
+											- décide de la création et de l’implantation des écoles et classes élémentaires et maternelles d’enseignement public après avis du représentant de l’Etat dans le département;<br>
+											- procède à la dénomination des voies et lieux-dits, y compris les voies privées ouvertes à la circulation ;<br>
+											- arrête le compte administratif qui lui est annuellement présenté par le maire;<br>
+											- entend, débat et arrête le compte du receveur municipal (sauf règlement définitif);<br>
+											- établit chaque année la liste des contribuables susceptibles d’être désignés comme membres de la commission communale des impôts directs;<br>
+											- donne son avis conforme sur les délibérations des centres communaux d’action sociale concernant un emprunt;<br>
+											- procède à la désignation de ses membres ou de délégués pour siéger au sein d’organismes extérieurs dans les cas et conditions prévus par le CGCT.<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support2">Les délégations données au maire par le conseil municipal</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support2">
+									<div class="panel-body">Article L. 2122-22 du CGCT<br><br>
+
+										<p>Les attributions, dont le maire peut être chargé par délégation de l’assemblée délibérante pendant la durée de son mandat, portent sur tout ou partie des affaires concernant :
+																																																							
+											- la fixation ou la modification de l’affectation des propriétés communales utilisées par les services publics municipaux et tout acte de délimitation des propriétés communales ;<br>
+											- la fixation des tarifs des droits de voirie, de stationnement, de dépôt temporaire sur les voies et autres lieux publics et, d’une manière générale, des droits au profit de la commune et n’ayant pas un caractère fiscal, ces droits et tarifs pouvant, le cas échéant, faire l'objet de modulations résultant de l'utilisation de procédures dématérialisées * ;<br>
+											- la réalisation des emprunts destinés au financement des investissements prévus par le budget et la passation à cet effet des actes nécessaires * ;<br>
+											- la préparation, la passation, l’exécution et le règlement de marchés et des accords-cadres ainsi que toute décision concernant leurs avenants lorsque les crédits sont inscrits au budget ;<br>
+											- la conclusion et la révision du louage de choses pour une durée n’excédant pas douze ans ;<br>
+											- la passation de contrats d’assurance et, l’acceptation des indemnités de sinistre afférentes à ces contrats ;<br>
+											- la création, la modification ou la suppression de régies comptables nécessaires au fonctionnement des services municipaux ;<br>
+											- la délivrance et la reprise des concessions dans les cimetières ;<br>
+											- l’acceptation de dons et legs qui ne sont grevés ni de conditions ni de charges ;<br>
+											- l’aliénation de gré à gré de biens mobiliers jusqu’à 4 600 € ;<br>
+											- la fixation des rémunérations et le règlement des frais et honoraires des hommes de loi et experts ;<br>
+											- la fixation, dans les limites de l’estimation des services fiscaux (domaines), du montant des offres de la commune à notifier aux expropriés ;<br>
+											- la création de classes dans les établissements d’enseignement ;<br>
+											- la fixation des reprises d’alignement en application d’un document d’urbanisme ;<br>
+											- l’exercice, au nom de la commune, des droits de préemption définis par le code de l’urbanisme, que la commune en soit titulaire ou délégataire, et la délégation de l’exercice de ces droits à l’occasion de - l’aliénation d’un bien selon les dispositions prévues aux articles L. 211-2 à L. 211-2-3 ou au premier alinéa de l’article L. 213-3 du même code* ;<br>
+											- l’exercice d’actions en justice au nom de la commune ou la défense de la commune dans les actions intentées contre elle et la transaction avec les tiers dans la limite de 1 000 € pour les communes de moins de 50 000 habitants et de 5 000 € pour les communes de 50 000 habitants et plus * ;<br>
+											- le règlement des conséquences dommageables des accidents dans lesquels sont impliqués des véhicules municipaux * ;<br>
+											- l’avis de la commune, en application de l’article L. 324-1 du code de l’urbanisme préalablement aux opérations menées par un établissement public foncier local ;<br>
+											- la signature de la convention prévue par le quatrième alinéa de l’article L. 311-4 du code de l’urbanisme (conditions dans lesquelles un constructeur participe au coût d’équipement d’une zone d’aménagement concerté) ainsi que la signature de la convention prévue par le troisième alinéa de l’article L. 332-11-2 du même code (conditions dans lesquelles un propriétaire peut verser la participation pour voirie et réseaux) ;<br>
+											- la réalisation de lignes de trésorerie sur la base d’un montant maximum autorisé par le conseil municipal ;<br>
+											- l’exercice ou la délégation, au nom de la commune, du droit de préemption défini par l’article L. 214-1 du code de l’urbanisme* ;<br>
+											- l’exercice ou la délégation, au nom de la commune, du droit de priorité défini aux articles L. 240-1 à L. 240-3 du code de l’urbanisme * ;<br>
+											- les décisions mentionnées aux articles L. 523-4 et L. 523-5 du code du patrimoine relatives à la réalisation de diagnostics d'archéologie préventive prescrits pour les opérations d'aménagement ou de travaux sur le territoire de la commune et de conclure la convention prévue à l'article L. 523-7 du même code ;<br>
+											- l’autorisation, au nom de la commune, du renouvellement de l’adhésion aux associations dont elle est membre ;<br>
+											- l’exercice, au nom de la commune, du droit d'expropriation pour cause d'utilité publique prévu au troisième alinéa de l'article L. 151-37 du code rural et de la pêche maritime en vue de l'exécution des travaux nécessaires à la constitution d'aires intermédiaires de stockage de bois dans les zones de montagne ;<br>
+											- la demande d'attribution de subventions à tout organisme financeur * ;<br>
+											- le dépôt des demandes d'autorisations d'urbanisme relatives à la démolition, à la transformation ou à l'édification des biens municipaux * ;<br>
+											- l’exercice, au nom de la commune, du droit prévu au I de l'article 10 de la loi n° 75-1351 du 31 décembre 1975 relative à la protection des occupants de locaux à usage d'habitation ;<br>
+											- l’ouverture et l’organisation de la participation du public par voie électronique prévue au I de l'article L. 123-19 du code de l'environnement ;<br>
+											- l’admission en non-valeur des titres de recettes, ou de certaines catégories d'entre eux, présentés par le comptable public, chacun de ces titres correspondant à une créance irrécouvrable d'un montant inférieur à un seuil fixé par délibération du conseil municipal, qui ne peut être supérieur à un seuil fixé par décret ;<br>
+											- l’autorisation des mandats spéciaux que les membres du conseil municipal peuvent être amenés à exercer dans le cadre de leurs fonctions, ainsi que le remboursement des frais afférents. * dans les limites et conditions déterminées ou fixées par le conseil municipal.<br><br>
+
+											<strong>Remarques : Article L. 2122-23 du CGCT</strong><br>
+
+											Les décisions prises par le maire dans les domaines qui précèdent sur délégation du conseil municipal sont soumises aux mêmes règles que celles qui sont applicables aux délibérations du conseil municipal portant sur les mêmes objets.<br><br>
+
+											Sauf dispositions contraires dans la délibération portant délégation d’attribution :<br><br>
+
+											- les décisions peuvent être signées par un adjoint ou un conseiller municipal agissant par délégation du maire dans les conditions fixées à l’article L. 2122-18 du CGCT :<br>
+
+											- les décisions relatives aux matières ayant fait l’objet de la délégation sont prises par le conseil municipal en cas d’empêchement du maire ;<br>
+
+											- le maire doit rendre compte à chacune des réunions obligatoires du conseil municipal ;<br>
+
+											- le conseil municipal peut toujours mettre fin à la délégation.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support3">Les droits des conseillers municipaux</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support3">
+									<div class="panel-body">
+
+										<p>
+											<strong>
+
+												Information et expression des membres du conseil municipal<br>
+											</strong>
+
+											Articles L. 2121-11, L. 2121-12, L. 2121-13, L. 2121-13-1, L. 2121-19, L. 2121-27-1, D. 2121-12 du CGCT<br><br>
+
+											<strong>Dispositions générales</strong><br><br>
+
+											Quelle que soit l’importance démographique de la commune, tout conseiller municipal, dans le cadre de sa fonction, doit être informé des affaires de la commune faisant l’objet d’une délibération.<br>
+
+											La commune assure la diffusion de l’information auprès de ses membres élus par les moyens qu’elle juge les plus adéquats. De plus, afin de permettre l’échange d’informations sur les affaires relevant de sa compétence, la commune peut, dans les conditions définies par le conseil municipal, mettre à la disposition de ses membres élus, à titre individuel, les moyens de télécommunications et informatiques nécessaires.<br>
+
+											Les conseillers municipaux ont droit de s’exprimer sur les affaires soumises à délibération, au cours des débats, et de proposer des amendements aux projets de délibérations. Ce droit s’exerce sous l’autorité du maire qui assure la police de l’assemblée et veille au bon déroulement de la séance. Le règlement intérieur, soumis au contrôle du juge administratif, ne peut porter atteinte au droit d’expression et au droit d’amendement des élus en les limitant de façon abusive.<br>
+
+											Les conseillers municipaux peuvent poser des questions orales relatives aux affaires de la commune. La fréquence et les règles de présentation et d’examen de ces questions sont fixées dans le règlement intérieur (commune de 1 000 habitants et plus) ou dans une délibération du conseil municipal en l’absence de règlement intérieur.<br>
+
+											Dans les communes de 1 000 habitants et plus, les élus de l’opposition se voient reconnaître, dans les conditions fixées par le règlement intérieur, des droits particuliers comme le droit à un espace réservé à leur expression dans les informations générales sur les réalisations et la gestion du conseil municipal diffusées par la commune (voir fiche « Les droits de l’opposition »).<br>
+
+											<strong>Dispositions spécifiques aux communes de 3 500 habitants et plus</strong><br><br>
+
+											Lorsqu’une délibération concerne un contrat de service public, tout conseiller municipal peut, dans les conditions fixées par le règlement intérieur, consulter le projet de contrat ou de marché accompagné de l’ensemble des pièces le concernant.<br>
+
+											Le délai de convocation est fixé à cinq jours francs (trois jours francs pour les communes de moins de 3 500 habitants). Ce délai peut être abrégé par le maire en cas d’urgence, sans être toutefois inférieur à un jour franc.<br>
+
+											Les élus de l’opposition se voient reconnaître des droits particuliers comme la possibilité de formuler une demande pour disposer sans frais du prêt d’un local commun (voir fiche « Les droits de l’opposition »).
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support4">Mission d’information et d’évaluation</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support4">
+									<div class="panel-body">
+
+										<p>Article L. 2121-22-1 du CGCT<br><br>
+
+											Une mission d’information et d’évaluation peut être créée dans les communes de 20 000 habitants et plus à la demande du sixième des membres du conseil municipal. Un même conseiller municipal ne peut s'associer à une telle demande plus d'une fois par an. Cette mission est chargée de recueillir des éléments d’information sur les questions d’intérêt communal ou procéder à l’évaluation d’un service public communal. Aucune mission ne peut être créée à partir du 1er janvier de l’année civile précédant le renouvellement général des conseils municipaux.<br>
+
+											Les dispositions relatives à cette mission (modalités de fonctionnement, composition, durée, conditions de remise du rapport etc.) sont fixées par le règlement intérieur. La durée de la mission ne peut excéder six mois à compter de la date de la délibération qui l'a créée. La mission remet son rapport aux membres du conseil municipal.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support5">Le fonctionnement des groupes d’élus</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support5">
+									<div class="panel-body">
+
+										<p>Article L. 2121-28 du CGCT<br><br>
+
+											Le fonctionnement des groupes d’élus dans les communes de plus de 100 000 habitants peut faire l’objet de délibérations sans que puissent être modifiées, à cette occasion, les décisions relatives au régime indemnitaire des élus. Dans ces mêmes conseils municipaux, les groupes se constituent par la remise au maire d’une déclaration, signée de leurs membres, accompagnée de la liste où figurent les noms de ceux-ci et celui de leur représentant.<br>
+
+											Le conseil municipal peut affecter aux groupes d’élus, pour leur usage propre ou pour un usage commun, un local administratif, du matériel et prendre en charge leurs frais de documentation, de courrier et de télécommunications. Le maire peut, dans les conditions fixées par le conseil municipal et sur proposition des représentants de chaque groupe, affecter aux groupes d'élus une ou plusieurs personnes.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support6">Les droits de l’opposition</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support6">
+									<div class="panel-body">
+
+										<p>
+											Afin de garantir l’expression du pluralisme et de permettre au public de connaître les différents points de vue des élus sur les affaires communales, le législateur a reconnu un certain nombre de droits aux élus de l’opposition au sein du conseil municipal. Ainsi, conformément à l’article L. 2121-27-1 du CGCT, dans les communes de 1 000habitants  lorsque des informations générales sur les réalisations et la gestion du conseil municipal sont diffusées par la commune, un espace est réservé à l'expression des conseillers élus sur une liste autre que celle ayant obtenu le plus de voix lors du dernier renouvellement du conseil municipal ou ayant déclaré ne pas appartenir à la majorité municipale dans les conditions fixées par le règlement intérieur. Ces dispositions, rédigées en termes généraux, s’appliquent à la communication régulière sur les actions menées par la municipalité, quel que soit le support utilisé : publications périodiques éditées directement par la commune ou gérées par un tiers, diffusion sur papier ou dématérialisée. En cas de limitation de leur droit d’expression, les élus de l’opposition peuvent saisir le tribunal administratif afin de mettre un terme à ces manquements à la légalité.<br>
+
+											Toutefois, il convient de rappeler que le droit d’expression sur les affaires communales doit être exercé par leurs titulaires, qu’ils soient de la majorité municipale ou de l’opposition, dans le respect des règles fixées par le code électoral et par la loi du 29 juillet 1881 relative à la liberté de la presse. La loi de 1881 définit notamment le directeur de publication, en l’occurrence le maire, comme auteur principal des crimes et délits commis par voie de presse. Ainsi, la responsabilité du maire, en tant que directeur de la publication, doit être appréciée à l’aune de la jurisprudence administrative, mais également de la jurisprudence judiciaire.<br>
+
+											Enfin, conformément à l’article L. 2121-27 du CGCT, les élus de l’opposition peuvent disposer sans frais d’un local commun dans les communes de plus de 3 500 habitants.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support7">Les séances du conseil municipal</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support7">
+									<div class="panel-body">
+
+										<p>Articles L. 2121-7 à L. 2121-22, L. 2121-23 à L. 2121-25, L. 2121-27 et L. 2121-27-1 du CGCT<br><br>
+
+											<strong>Dispositions générales</strong><br><br>
+
+											Le conseil municipal se réunit au minimum une fois par trimestre sur convocation du maire. Par ailleurs, le maire peut réunir l’assemblée délibérante de sa propre initiative chaque fois qu’il le juge utile. En outre, il est tenu de réunir le conseil municipal dans un délai maximal de trente jours suivant la demande motivée :<br><br>
+
+											- du représentant de l’Etat dans le département (ce délai peut être réduit à la demande du représentant de l’Etat en cas d’urgence) ;<br>
+
+											- du tiers au moins des conseillers municipaux en exercice dans les communes de 1 000 habitants et plus ;<br>
+											- ou de la majorité des membres du conseil municipal dans les communes de moins de 1 000 habitants.<br><br>
+
+											Le conseil municipal se réunit et délibère à la mairie. Il peut également délibérer, à titre définitif, dans un autre lieu situé sur le territoire de la commune à condition que ce lieu ne contrevienne pas au principe de neutralité, qu’il offre de bonnes conditions d’accessibilité et de sécurité et qu’il permette la publicité des séances. Naturellement, les habitants doivent être informés du changement de lieu par tout moyen à la convenance de la commune.<br><br>
+
+											<strong>Convocation du conseil municipal</strong><br><br>
+
+											Toute convocation est faite par le maire. Elle est transmise de manière dématérialisée ou, si les conseillers municipaux en font la demande, adressée par écrit à leur domicile ou à une autre adresse. Le délai à respecter entre la date d’envoi de la convocation et celle de la réunion est de trois jours francs dans les communes de moins de 3 500 habitants et de cinq jours francs dans les autres communes. En cas d’urgence, ce délai peut être abrégé par le maire sans, toutefois, être inférieur à un jour franc ; dans ce cas, dès l’ouverture de la séance, le conseil municipal doit se prononcer sur l’urgence invoquée par le maire.<br>
+
+											La convocation doit être écrite, sous quelque forme que ce soit, indiquer tous les points de l’ordre du jour, être mentionnée au registre des délibérations, affichée ou publiée.<br>
+
+											Dans les communes de 3 500 habitants et plus, une note explicative de synthèse sur les affaires qui seront délibérées doit être jointe à la convocation.<br><br>
+
+											<strong>Règlement intérieur</strong><br><br>
+
+											L’adoption d’un règlement intérieur n’est pas obligatoire dans les communes de moins de 1 000 habitants.<br>
+
+											En revanche, le conseil municipal des communes de 1 000 habitants et plus doit établir son règlement intérieur dans les six mois qui suivent son installation.<br>
+
+											Cet acte fixe les règles de fonctionnement de l’assemblée délibérante dans le cadre des dispositions prévues par le CGCT.<br>
+
+											Il doit préciser par ailleurs :<br>
+
+											- les modalités d’organisation du débat d’orientation budgétaire qui doit se dérouler deux mois avant le vote du budget ;<br>
+
+											- les modalités de la consultation par le conseil municipal des projets de contrat de service public ou de marché ;<br>
+
+											- les règles relatives aux questions orales des conseillers municipaux (présentation, examen, fréquence...) ;<br>
+
+											- les modalités d’expression, dans le bulletin municipal des conseillers municipaux n’appartenant pas à la majorité municipale (voir « droits de l’opposition).<br>
+
+											De plus, le règlement intérieur doit fixer les règles de présentation et d’examen de la demande de constitution de la mission d’information et d’évaluation intéressant les conseillers municipaux, dans les communes de 20 000 habitants et plus, et préciser les modalités de son fonctionnement et de sa composition dans le respect du principe de la représentation proportionnelle, la durée de la mission (limitée à six mois maximum) ainsi que les conditions de remise de son rapport aux membres du conseil municipal (voir «  mission d’information et d’évaluation »).<br>
+
+											Le règlement intérieur peut être déféré devant le tribunal administratif.<br><br>
+
+											<strong>Présidence – Police – Quorum – Secrétariat – Déroulement des séances et vote</strong><br><br>
+
+											Les séances du conseil municipal sont
+											<strong>présidées par le maire</strong>
+											ou par celui qui le remplace. Il ouvre la séance, dirige les débats et les déclare clos lorsque l’ordre du jour est épuisé.<br>
+
+											Lorsque le compte administratif du maire est débattu, le conseil municipal désigne un président ; le maire peut assister à la discussion (même s’il n’est plus en fonction) mais il doit se retirer au moment du vote du compte.<br>
+
+											<strong>Le maire a seul la police de l’assemblée</strong>
+											et peut faire expulser de l’auditoire ou arrêter tout individu troublant l’ordre public. En cas de crime ou de délit, il doit dresser procès-verbal et saisir immédiatement le procureur de la République.<br><br>
+
+											Au début de chaque séance :<br><br>
+
+											- le maire doit s’assurer que le quorum est atteint. En effet, le conseil municipal ne délibère valablement que
+											<strong>si la majorité des membres en exercice est présente.</strong>
+											Si le quorum n’est pas atteint, le conseil municipal est à nouveau convoqué à trois jours au moins d’intervalle. Il délibère alors valablement sans condition de quorum ;<br>
+
+											- le conseil municipal nomme un ou plusieurs secrétaires de séance. L’assemblée délibérante peut, le cas échéant, désigner un ou plusieurs auxiliaires à ce ou à ces secrétaires (le directeur général ou le directeur général adjoint par exemple) ; ces auxiliaires assistent aux débats mais ne doivent pas participer au vote.<br>
+
+											Les débats du conseil municipal sont
+											<strong>publics</strong>
+											et peuvent, par ailleurs, être retransmis par des moyens de communication audiovisuelle. Le public doit s’abstenir de toute intervention ou de toute manifestation.<br>
+
+											Toutefois, sur la demande de trois membres ou du maire, le conseil municipal peut décider, sans débats, à la majorité absolue des membres présents ou représentés, de se réunir à huis clos. Une délibération prise à huis clos sans que le conseil municipal l’ait décidé préalablement est entachée d’illégalité. Le Conseil d’Etat a admis que la présence du secrétaire de mairie, dans la salle du conseil municipal siégeant à huis clos, n’est pas de nature à entacher les délibérations d’illégalité dans la mesure où cette présence n’influence pas le vote de l’assemblée délibérante.<br><br>
+
+											Le conseil municipal peut voter selon trois modes de scrutin :<br><br>
+
+											-
+											<strong>le scrutin ordinaire</strong>
+											à main levée ou par assis et levés ;<br>
+											-
+											<strong>le scrutin public</strong>, à la demande du quart des membres présents, soit par bulletin écrit, soit par appel nominal. Le registre des délibérations doit comporter le nom des votants ainsi que l’indication du sens de leur vote ;<br>
+											-
+											<strong>le scrutin secret</strong>, lorsqu’un tiers des membres présents le réclame ou s’il y a lieu de procéder à une nomination ou à une présentation. Dans ce dernier cas, il s’agit d’une élection à trois tours de scrutin (si aucun des candidats n’a obtenu la majorité absolue après deux tours de scrutin secret, il est procédé à un troisième tour de scrutin et l’élection a lieu à la majorité relative ; à égalité de voix, l’élection est acquise au plus âgé). Sauf disposition législative ou réglementaire prévoyant expressément ce mode de scrutin, le conseil municipal peut décider, à l’unanimité, de ne pas procéder au scrutin secret en cas de nomination ou de présentation.<br>
+
+											En cas d’absence, un membre du conseil municipal peut donner pouvoir à un autre membre du conseil municipal pour voter en son nom. Un même conseiller ne peut être porteur que d’un seul pouvoir.
+											<strong>Un pouvoir n’est valable que pour trois séances consécutives, sauf en cas de maladie dûment constatée.</strong><br>
+
+											Les délibérations sont prises à la
+											<strong>majorité absolue des suffrages exprimés.</strong>
+											En cas de partage des voix, la voix du président est prépondérante, sauf dans le cas du scrutin secret.<br>
+
+											A compter du 1er juillet 2022, elles sont signées par le maire et le ou les secrétaires de séance.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support8">Les commissions municipales</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support8">
+									<div class="panel-body">
+
+										<p>
+											Au cours de chaque séance, le conseil municipal peut former des commissions chargées d’examiner des questions soumises au conseil soit par l’administration, soit à l’initiative d’un de ses membres. Elles portent sur des affaires d’intérêt local dans les domaines les plus divers : social, enseignement, urbanisme, environnement, habitat... Ces instances sont convoquées par le maire, qui en est président de droit, dans les huit jours suivant leur constitution ou à plus bref délai sur la demande de la majorité des membres qui les composent.<br>
+
+											Afin de permettre l’expression pluraliste des élus au sein de l’assemblée municipale, la composition des différentes commissions doit respecter le principe de la représentation proportionnelle dans les communes de 1000 habitants et plus, un siège au minimum revenant à chaque composante du conseil. Les commissions d’appel d’offres et les bureaux d’adjudication sont composés au scrutin de liste à la représentation proportionnelle au plus fort reste ainsi qu’il est précisé dans le code des marchés publics.<br>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support9">La publicité des délibérations</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support9">
+									<div class="panel-body">
+
+										<p>
+											Dispositions en vigueur à compter du 1er juillet 2022<br>
+
+											Les délibérations du conseil municipal sont publiées dans les conditions prévues à l’article L. 2131-1 du CGCT. Ainsi, les délibérations constituant des actes règlementaires ou des actes ni individuels ni règlementaires sont publiées sous forme électronique, dans les conditions fixées par l’article R. 2131-1 du même code. Par exception, les communes de moins de 3 500 habitants peuvent choisir au moyen d’une délibération le mode de publicité qui leur convient le mieux entre l’affichage, la publication papier ou la publication électronique.<br>
+
+											La publicité prévue à l’article L. 2131-1 du CGCT est, avec la transmission au préfet, la formalité qui confère à l’acte son caractère exécutoire.<br>
+
+											Par ailleurs, selon les dispositions de l’article L.2121-24 du CGCT, les délibérations approuvant une convention de délégation de service public ainsi que le dispositif de celles prises en matière d’interventions économiques en application des dispositions du titre Ier du livre V de la première partie et des articles L. 2251-1 à L. 2251-5 doivent faire l’objet d’une insertion dans une publication locale diffusée dans la commune.<br>
+
+											Plusieurs instruments permettent en outre de porter à la connaissance du public les délibérations du conseil municipal :<br>
+
+											- <strong>le procès-verbal</strong> des séances, prévu à l’article L. 2121-15 du CGCT, a pour objet d’établir les faits et et décisions des séances du conseil municipal. Dans la semaine qui suit la séance au cours de laquelle il a été arrêté, il est publié sous forme électronique sur le site internet de la commune, lorsqu’il existe, et un exemplaire papier est mis à la disposition du public ;<br>
+											- <strong>la liste des délibérations</strong> examinées par le conseil municipal, prévue à l’article L. 2121-25 du CGCT et qui remplace le compte rendu, est affichée à la mairie et mise en ligne sur le site internet de la commune lorsqu’il existe ;<br>
+											- <strong>le registre des délibérations</strong>, prévu à l’article L. 2121-23 du CGCT, est un document coté et paraphé par le maire, qui contient les délibérations par ordre de date. La tenue du registre est assurée sur papier et peut également être organisée à titre complémentaire sur support numérique dans les conditions prévues à l’article R. 2121-9 du CGCT.<br>
+											Pour en savoir plus : https://www.collectivites-locales.gouv.fr/publicite-et-entree-en-vigueur-des-actes-des-collectivites-locales
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title font-alt">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#support10">La démission d’un ou plusieurs conseillers municipaux</a>
+									</h4>
+								</div>
+								<div class="panel-collapse collapse" id="support10">
+									<div class="panel-body">
+
+										<p>
+											Articles L. 2121-4 à L. 2121-6 et L. 2121-35 à L. 2121-39 du CGCT<br><br>
+
+											Est déclaré démissionnaire par le tribunal administratif tout membre d’un conseil municipal qui, sans excuse valable, a refusé de remplir une des fonctions qui lui sont dévolues par les dispositions en vigueur.<br>
+
+											Le refus résulte soit de l’abstention persistante après avertissement de l’autorité chargée de la convocation, soit d’une déclaration expresse adressée à qui de droit ou rendue publique par son auteur. Le démissionnaire ne peut être réélu avant le délai d’un an.<br>
+
+											La démission des membres du conseil municipal doit être adressée au maire. Elle est définitive dès sa réception par le maire, lequel en informe aussitôt le préfet.<br>
+
+											S’agissant de la dissolution d’un conseil municipal, celle-ci ne peut intervenir que par décret motivé pris en conseil des ministres et publié au Journal officiel. <br>
+
+											S’il y a urgence, un conseil municipal peut être suspendu, pendant une durée ne pouvant excéder un mois, par arrêté motivé du représentant de l’Etat dans le département.<br>
+
+											D’une manière générale, une dissolution ne se justifie, aux termes de la jurisprudence du Conseil d’Etat que lorsque les dissensions au sein du conseil municipal empêchent son bon fonctionnement ainsi que le fonctionnement de l’administration communale.<br>
+
+											Une délégation spéciale peut être nommée par le représentant de l’Etat dans le département en cas de dissolution du conseil municipal, de démission de tous ses membres ou en cas d’annulation définitive des élections. La délégation spéciale est composée de trois membres dans les communes de moins de 35 000 habitants et de sept membres dans celles dont la population est supérieure. Les pouvoirs de cette délégation sont limités aux actes de pure administration conservatoire et urgente. Elle ne peut engager les finances municipales au-delà des ressources disponibles de l’exercice courant, ni préparer le budget communal, ni recevoir les comptes du maire ou du receveur municipal, ni modifier le personnel ou le régime de l’enseignement public. Dès que le conseil municipal est reconstitué ses fonctions expirent de plein droit.<br>
+											
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	{% endblock %}

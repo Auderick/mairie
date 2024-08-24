@@ -3523,6 +3523,28 @@ h2#les_conseillers_les_elus {
   margin: 0;
 }
 
+/****************************************
+** MAIRIE / CONSEIL MUNICIPAL DELIBERATIONS **
+*****************************************/
+
+section#deliberation {
+  height: 500px !important;
+}
+section#conseil_municipal_deliberation {
+  background: rgb(178, 195, 195);
+}
+
+/****************************************
+** MAIRIE / CONSEIL MUNICIPAL DELIBERATIONS ANNEE **
+*****************************************/
+
+section#deliberation_annee {
+  height: 500px !important;
+}
+section#conseil_municipal_deliberation_annee {
+  background: rgb(178, 195, 195);
+}
+
 /***********************
 ** MAIRIE / LE BUDGET **
 ************************/
@@ -3545,8 +3567,6 @@ div#mairie_le_budget{
 }
 
 section#mairie_le_budget {
-  margin-bottom: 125px !important;
-  padding-bottom: 0px !important;
   height: 1000px !important;
   background: rgb(178, 195, 195);
 }
@@ -3557,12 +3577,19 @@ section#mairie_budget {
 }
 
 div#budget_la_mairie {
-  margin-top: -140px;
+  margin-top: -160px;
 }
 
 div#le_budget_la_mairie {
   text-align: center;
+  margin-top: -100px;
+  position: relative;
 }
+div#le_budget_la_mairie iframe {
+    width: 100%;
+    padding-bottom: auto;
+  }
+
 
 div#budget_commune {
   padding: 1px;
@@ -3574,6 +3601,10 @@ div#budget_commune {
   background: rgb(3, 169, 169);
   width: 45%;
   border-radius: 12px;
+}
+div#budget_commune_responsive{
+  margin-bottom: 70px;
+
 }
 
 i.fa\..fa-folder-open {
