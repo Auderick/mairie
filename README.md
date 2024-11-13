@@ -1,3 +1,3 @@
-## Documentation du site Mazerolles (mairie)
+## Projet pur une mairie ##
 
-- commandes# mazerolles
+En cours de développement.
